@@ -59,7 +59,9 @@ All callbacks should follow this format: `function(error, response, body, succes
 
  * __body__: On successful requests, this will be an object or array depending on the method called.
 
- * __success__: A convenience parameter, this is a boolean indicating if the request was a success.
+ * __success__: A boolean indicating if the requested data could be retrieved. 
+ Success will be false if an error occurred, or if Parse returned a non 200 response. When success is false,
+ it means __body__ will be a message from parse, not the object(s) you requested.
 
 
 ### Users
