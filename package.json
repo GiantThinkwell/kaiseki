@@ -14,7 +14,7 @@
   },
   "main": "./index.js",
   "dependencies": {
-    "request": "2.27.x",
+    "request": "2.58.x",
     "underscore": "1.5.x",
     "mime": "1.2.x"
   },
